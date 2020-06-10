@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import Tweet from './Tweet'
 
 class Dashboard extends Component {
     render() {
@@ -12,7 +13,7 @@ class Dashboard extends Component {
                 (id) => 
                 (
                 <li key={id}>
-                    <div>{id}</div>
+                    <Tweet id={id}></Tweet>
                 </li>
                 )
             ) }
